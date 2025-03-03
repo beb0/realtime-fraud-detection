@@ -92,7 +92,6 @@ def create_cassandra_connection():
     try:
         # connecting to the cassandra cluster
         cluster = Cluster(['localhost'])
-
         cas_session = cluster.connect()
 
         return cas_session
